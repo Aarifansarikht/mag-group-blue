@@ -56,13 +56,13 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
                         <img src={product.image} className="w-full h-full object-cover" alt={product.title} />
                         <div className="absolute inset-0 bg-cobalt/10 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
-                    <div className="grid grid-cols-3 gap-4">
+                    {/* <div className="grid grid-cols-3 gap-4">
                         {[1, 2, 3].map((i) => (
                           <div key={i} className="aspect-square rounded-2xl overflow-hidden bg-tech-100 border border-tech-200">
                              <img src={product.image} className="w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity cursor-pointer" />
                           </div>
                         ))}
-                    </div>
+                    </div> */}
                  </motion.div>
 
                  {/* Right: Details */}
@@ -116,7 +116,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
               <div className="max-w-4xl mx-auto">
                   <h3 className="text-3xl font-display font-bold text-center mb-12">Technical Specifications</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      {Object.entries(product.specs).map(([key, value], i) => (
+                      {Object.entries(product.features).map(([key, value], i) => (
                           <div key={i} className="bg-white p-6 rounded-2xl border border-tech-200 flex items-center justify-between hover:border-cobalt transition-colors shadow-sm">
                               <span className="font-mono text-xs font-bold uppercase text-tech-500">{key}</span>
                               <span className="font-bold text-ink text-lg">{value as string}</span>

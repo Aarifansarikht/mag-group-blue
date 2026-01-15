@@ -7,17 +7,23 @@ export const IMAGES = {
     facade: "/images/banner/banner-1.jpg",
   },
 
-  products: {
-    floor_drain: "/images/products/floor-drains.jpg",
-    cleanout: "/images/products/drain-outlets.jpg",
-    grating: "/images/products/gratings-gully.jpg",
-    rainwater: "/images/products/rainwater-outlets.jpg",
-    scupper: "/images/products/drainage-solutions.jpg",
-    parking: "/images/products/parking-area-drains.jpg",
-    kitchen: "/images/products/kitchen-ablution-drains.jpg",
-    manhole: "/images/products/manhole-covers.jpg",
-  },
+ products: {
+    floor_drains: "/images/products/drainage/floor1.jpg",
+    cleanouts: "/images/products/drainage/cleanouts2.jpg",
+    shower_drains: "/images/products/drainage/drain1.jpg",
 
+    rainwater_outlets: "/images/products/rainwater-outlets.jpg",
+    roof_scupper: "/images/products/drainage/roof1.jpg",
+
+    parking_area: "/images/products/drainage/parking2.jpg",
+
+    kitchen_drainage: "/images/products/kitchen-ablution-drains.jpg",
+    ablution_gratings: "/images/products/drainage/ablution_grating.jpg",
+
+    gully_gratings: "/images/products/gratings-gully.jpg",
+
+    manhole_covers: "/images/products/drainage/cover2.jpg",
+  },
   steel: {
     beams_hero: "/images/services/structural-steel.jpg",
     structure: "/images/services/steel-structure.jpg",

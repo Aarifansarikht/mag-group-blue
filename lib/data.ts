@@ -2,138 +2,166 @@
 import { IMAGES } from "./constants";
 
 export const PRODUCTS = [
-  // === DRAINAGE ACCESSORIES ===
-  { 
-    id: "floor-drains", 
-    title: "Floor Drains", 
-    category: "Drain Outlets", 
-    image: IMAGES.products.floor_drain, 
+  // === DRAIN OUTLETS ===
+  {
+    id: "floor-drains",
+    title: "Floor Drains",
+    category: "Drain Outlets",
+    image: IMAGES.products.floor_drains,
     spec: "SS304 / SS316",
-    description: "Premium stainless steel floor drains designed for modern architectural applications. Features removable trap and adjustable height.",
-    features: ["Grade 304/316 Stainless Steel", "Flow rate > 0.8 L/s", "Odor-seal trap included", "Heavy-duty grating options"],
-    specs: { material: "Stainless Steel", loadClass: "K3 (300kg)", outlet: "Vertical / Horizontal", size: "100x100mm to 300x300mm" }
+    description:
+      "High-quality stainless steel floor drains suitable for commercial, residential, and industrial flooring systems.",
+    features: [
+      "Removable trap",
+      "Anti-odor design",
+      "Heavy-duty grating",
+      "Adjustable height"
+    ]
   },
-  { 
-    id: "cleanouts", 
-    title: "Cleanouts", 
-    category: "Drain Outlets", 
-    image: IMAGES.products.cleanout, 
-    spec: "Double Seal",
-    description: "Gas-tight and water-tight cleanouts for access to drainage pipes in commercial floorings.",
-    features: ["Double seal technology", "Gas tight", "Screw-down cover", "Anti-slip surface"],
-    specs: { material: "SS304 / SS316 / Brass", loadClass: "L15 (1500kg)", seal: "Neoprene Gasket", size: "DN100 - DN200" }
+  {
+    id: "cleanouts",
+    title: "Cleanouts",
+    category: "Drain Outlets",
+    image: IMAGES.products.cleanouts,
+    spec: "Gas Tight",
+    description:
+      "Access covers for drainage pipelines ensuring gas-tight and water-tight inspection access.",
+    features: [
+      "Double seal gasket",
+      "Screw-down cover",
+      "Corrosion resistant",
+      "Easy maintenance"
+    ]
   },
-  { 
-    id: "shower-drains", 
-    title: "Shower Drains", 
-    category: "Drain Outlets", 
-    image: IMAGES.products.grating, 
-    spec: "Linear Slot",
-    description: "Minimalist linear shower channels for walk-in showers and wet rooms.",
-    features: ["360-degree rotatable outlet", "Low profile installation", "Hair catcher included", "Tile-insert option"],
-    specs: { material: "SS316L", length: "600mm - 1200mm", flowRate: "48 L/min", finish: "Brushed / Polished / PVD" }
-  },
-  { 
-    id: "rainwater-outlets", 
-    title: "Rainwater Outlets", 
-    category: "Roof & Area", 
-    image: IMAGES.products.rainwater, 
-    spec: "High Flow",
-    description: "Vertical roof outlets with domed grating for flat roof water management.",
-    features: ["Gravel guard", "Clamping ring for waterproofing", "High flow capacity", "Insulated body option"],
-    specs: { material: "Cast Iron / Aluminum", outlet: "Vertical", diameter: "DN75 - DN150", flow: "Up to 12 L/s" }
-  },
-  { 
-    id: "roof-scupper-drains", 
-    title: "Roof Scupper Drains", 
-    category: "Roof & Area", 
-    image: IMAGES.products.scupper, 
-    spec: "Parapet Outlet",
-    description: "Horizontal parapet outlets for efficient roof drainage through side walls.",
-    features: ["Angled outlet", "Stainless steel fabrication", "Bitumen membrane flange", "Custom lengths"],
-    specs: { material: "SS304 / SS316", outlet: "Horizontal", size: "100x100mm", flow: "Gravity" }
-  },
-  { 
-    id: "parking-drains", 
-    title: "Parking & Area Drains", 
-    category: "Roof & Area", 
-    image: IMAGES.products.manhole, 
-    spec: "Heavy Duty",
-    description: "Robust drains designed for multi-story car parks and industrial areas.",
-    features: ["Heavy duty grating", "Sediment bucket", "Large flange for waterproofing", "Heel-proof design"],
-    specs: { material: "Ductile Iron / SS", loadClass: "C250 / D400", outlet: "Vertical / Side", size: "300x300mm" }
-  },
-  { 
-    id: "kitchen-channels", 
-    title: "Kitchen Drainage", 
-    category: "Kitchen & Ablution", 
-    image: IMAGES.products.kitchen, 
-    spec: "Hygienic Pro",
-    description: "Slotted channels for commercial kitchens preventing bacteria growth.",
-    features: ["Rounded internal corners", "V-bottom for self-cleaning", "Anti-slip mesh grating", "Filter basket"],
-    specs: { material: "SS304 / SS316", width: "150mm - 300mm", grating: "Mesh / Ladder", load: "L15 / M125" }
-  },
-  { 
-    id: "ablution-gratings", 
-    title: "Ablution Gratings", 
-    category: "Kitchen & Ablution", 
-    image: IMAGES.products.grating, 
-    spec: "Mosque Standard",
-    description: "Specialized stainless steel gratings for ablution areas.",
-    features: ["Custom sizes", "Anti-slip finish", "Easy cleaning access", "Corrosion resistant"],
-    specs: { material: "SS316L", finish: "Satin / Mirror", barSpacing: "Standard", load: "Pedestrian" }
-  },
-  { 
-    id: "gully-gratings", 
-    title: "Gully Gratings", 
-    category: "Infrastructure", 
-    image: IMAGES.products.parking, 
-    spec: "Ductile Iron",
-    description: "Roadside gully gratings for stormwater capture.",
-    features: ["Hinged design", "Captive lock", "Bicycle safe", "High absorption capacity"],
-    specs: { material: "Ductile Iron GGG50", standard: "EN124-2", load: "C250 / D400", size: "500x500mm" }
-  },
-  { 
-    id: "manhole-covers", 
-    title: "Manhole Covers", 
-    category: "Infrastructure", 
-    image: IMAGES.products.manhole, 
-    spec: "Class D400 - F900",
-    description: "Heavy-duty ductile iron manhole covers for main roads, highways and airports.",
-    features: ["Anti-theft hinge", "Noise-dampening gasket", "Bitumen coating", "Custom logo badging"],
-    specs: { material: "Ductile Iron GGG50", standard: "EN124-2", load: "D400 / E600 / F900", clearOpening: "600mm Dia" }
+  {
+    id: "shower-drains",
+    title: "Shower Drains",
+    category: "Drain Outlets",
+    image: IMAGES.products.shower_drains,
+    spec: "Linear / Square",
+    description:
+      "Modern shower drainage systems for wet rooms, hotels, and luxury bathrooms.",
+    features: [
+      "Linear & square options",
+      "Hair catcher",
+      "Tile insert design",
+      "High flow capacity"
+    ]
   },
 
-  // === STEEL FABRICATION ===
-  { 
-    id: "structural-beams", 
-    title: "Structural Beams", 
-    category: "Steel Fabrication", 
-    image: IMAGES.steel.beams_hero, 
-    spec: "H-Beams / I-Beams",
-    description: "Primary structural support beams fabricated, blasted, and painted to specification.",
-    features: ["CNC Plasma cut", "Sub-arc welding", "3-coat paint system", "Ultrasonic tested"],
-    specs: { grade: "ASTM A572 Gr.50", finish: "Painted / Galvanized", length: "Up to 18m", tolerance: "ISO 2768" }
+  // === RAINWATER / ROOF ===
+  {
+    id: "rainwater-outlets",
+    title: "Rainwater Outlets",
+    category: "Roof Drainage",
+    image: IMAGES.products.rainwater_outlets,
+    spec: "High Flow",
+    description:
+      "Vertical rainwater outlets designed for flat roofs and podium slabs.",
+    features: [
+      "Domed grating",
+      "High discharge rate",
+      "Waterproofing flange",
+      "Durable construction"
+    ]
   },
-  { 
-    id: "mezzanines", 
-    title: "Mezzanines", 
-    category: "Industrial Steel", 
-    image: IMAGES.steel.mezzanine, 
-    spec: "Heavy Load Platform",
-    description: "Custom steel mezzanine floors for maximizing warehouse storage space.",
-    features: ["Bolted connections", "Chequered plate flooring", "Safety handrails", "Staircase integration"],
-    specs: { load: "500 - 1000 kg/m2", span: "Up to 10m grid", finish: "Powder Coated", compliance: "Local Civil Defense" }
+  {
+    id: "roof-scupper-drains",
+    title: "Roof Scupper Drains",
+    category: "Roof Drainage",
+    image: IMAGES.products.roof_scupper,
+    spec: "Horizontal Outlet",
+    description:
+      "Side outlet drainage systems for parapet walls and roof edges.",
+    features: [
+      "Custom fabrication",
+      "Bitumen membrane compatible",
+      "Stainless steel body",
+      "Efficient discharge"
+    ]
   },
-  { 
-    id: "stadiums", 
-    title: "Stadium Canopies", 
-    category: "Infrastructure", 
-    image: IMAGES.steel.stadium, 
-    spec: "Long Span Truss",
-    description: "Complex tubular steel trusses for stadium roof structures.",
-    features: ["3D Modeling & Analysis", "Complex node fabrication", "Tension rod systems", "High-spec coating"],
-    specs: { material: "S355JR / S355J2", weld: "Full Penetration", inspection: "100% NDT", assembly: "Trial assembled" }
+
+  // === PARKING & AREA ===
+  {
+    id: "parking-area-drains",
+    title: "Parking & Area Drains",
+    category: "External Drainage",
+    image: IMAGES.products.parking_area,
+    spec: "Heavy Duty",
+    description:
+      "Robust drainage solutions for parking areas, driveways, and industrial zones.",
+    features: [
+      "High load bearing",
+      "Sediment bucket",
+      "Heel-proof grating",
+      "Long service life"
+    ]
+  },
+
+  // === KITCHEN & ABLUTION ===
+  {
+    id: "kitchen-drainage",
+    title: "Kitchen Drainage Solutions",
+    category: "Kitchen & Ablution",
+    image: IMAGES.products.kitchen_drainage,
+    spec: "Hygienic Design",
+    description:
+      "Slotted and channel drains designed for commercial kitchens and food processing areas.",
+    features: [
+      "Easy to clean",
+      "Anti-bacterial design",
+      "High flow capacity",
+      "Slip-resistant grating"
+    ]
+  },
+  {
+    id: "ablution-gratings",
+    title: "Ablution Gratings",
+    category: "Kitchen & Ablution",
+    image: IMAGES.products.ablution_gratings,
+    spec: "Mosque Standard",
+    description:
+      "Custom stainless steel gratings for mosque ablution and wash areas.",
+    features: [
+      "Anti-slip surface",
+      "Custom sizes",
+      "Corrosion resistant",
+      "Easy maintenance"
+    ]
+  },
+
+  // === GRATINGS & GULLY ===
+  {
+    id: "gully-gratings",
+    title: "Gratings & Gully Gratings",
+    category: "Infrastructure",
+    image: IMAGES.products.gully_gratings,
+    spec: "Ductile Iron",
+    description:
+      "Roadside and surface water gully gratings for stormwater management.",
+    features: [
+      "High load rating",
+      "Bicycle safe",
+      "Hinged cover",
+      "Long lifespan"
+    ]
+  },
+
+  // === MANHOLE COVERS ===
+  {
+    id: "manhole-covers",
+    title: "Manhole Covers",
+    category: "Infrastructure",
+    image: IMAGES.products.manhole_covers,
+    spec: "D400 – F900",
+    description:
+      "Heavy-duty ductile iron manhole covers for roads, highways, and airports.",
+    features: [
+      "Anti-theft design",
+      "Noise reduction gasket",
+      "Custom logo option",
+      "International standards compliant"
+    ]
   }
 ];
 
@@ -218,6 +246,79 @@ export const PROJECTS = [
     },
     gallery: [IMAGES.projects.yas, IMAGES.misc.bridge]
   }
+];
+export const serviceList = [
+  {
+    id:1,
+    title: "Structural Steel Systems",
+    desc: "Engineered steel frameworks for complex and large-scale construction projects.",
+    image: "/images/services/structural-steel.jpg",
+    items: ["High-Rise Building Frames", "Stadium & Arena Structures", "Steel Bridge Systems"],
+  },
+  {
+    id:2,
+
+    title: "Light Steel & Mezzanine Systems",
+    desc: "Optimized lightweight steel solutions for efficient space utilization.",
+    image: "/images/services/mezzanine-steel.jpg",
+    items: ["Light Steel Structures", "Steel Mezzanine Floors", "Suspended Steel Flooring"],
+  },
+  {
+    id:3,
+
+    title: "Prefabricated & Industrial Buildings",
+    desc: "Factory-engineered steel buildings for fast-track project execution.",
+    image: "/images/services/prefab-buildings.jpg",
+    items: ["Prefabricated Steel Buildings", "Industrial Facilities", "Tarpaulin-Covered Steel Structures"],
+  },
+  {
+    id:4,
+
+    title: "Logistics & Warehouse Structures",
+    desc: "Heavy-duty steel systems for logistics, storage, and distribution facilities.",
+    image: "/images/services/logistics-warehouse.jpg",
+    items: ["Logistics Warehouses", "High-Span Roof Structures", "Racking Support Systems"],
+  },
+  {
+    id:5,
+
+    title: "Specialized & Retractable Systems",
+    desc: "Custom-engineered steel solutions for advanced architectural requirements.",
+    image: "/images/services/retractable-systems.jpg",
+    items: ["Retractable Glass Roof Systems", "Architectural Steel Elements"],
+  },
+  {
+    id:6,
+
+    title: "Energy, Utility & Access Systems",
+    desc: "Steel systems designed for safety, durability, and operational efficiency.",
+    image: "/images/services/energy-doors.jpg",
+    items: ["Steel Transformer Doors", "Energy-Efficient Steel Doors"],
+  },
+  {
+    id:7,
+
+    title: "Shutters, Barriers & Automation",
+    desc: "Automated steel access and security systems.",
+    image: "/images/services/shutters-automation.jpg",
+    items: ["Rolling Shutters", "Gate & Barrier Systems"],
+  },
+  {
+    id:8,
+
+    title: "Protective & Safety Structures",
+    desc: "Fabricated steel systems focused on protection and compliance.",
+    image: "/images/services/protective-railings.jpg",
+    items: ["Protective Railings", "Guardrails & Handrails"],
+  },
+  {
+    id:9,
+
+    title: "Villas & Residential Steel Systems",
+    desc: "Modern steel construction for villas and residential developments.",
+    image: "/images/services/steel-villas.jpg",
+    items: ["Steel Villas", "Luxury Residential Steel"],
+  },
 ];
 
 export const getProduct = (id: string) => PRODUCTS.find(p => p.id === id);
