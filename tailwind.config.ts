@@ -46,7 +46,13 @@ const config: Config = {
         cyan: {
           400: '#22d3ee',
           500: '#06b6d4',
-        }
+        },
+          brand: {
+           DEFAULT: '#D4AF37',
+           accent: '#60A5FA', 
+           steel: '#60A5FA',   
+           950: '#130E02',
+        },
       },
       backgroundImage: {
         'grid-pattern': "linear-gradient(to right, #F1F5F9 1px, transparent 1px), linear-gradient(to bottom, #F1F5F9 1px, transparent 1px)",
@@ -65,6 +71,8 @@ const config: Config = {
         "scan": "scan 4s linear infinite",
         "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "float": "float 6s ease-in-out infinite",
+        "splash-pulse": "splash-pulse 3s ease-out infinite",
+        "splash-zoom": "splash-zoom 1.5s ease-out forwards",
       },
       keyframes: {
         "scan": {
@@ -74,6 +82,14 @@ const config: Config = {
         "float": {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
+        },
+        "splash-pulse": {
+          "0%": { transform: "scale(0.8)", opacity: "0.5" },
+          "100%": { transform: "scale(2)", opacity: "0" },
+        },
+        "splash-zoom": {
+          "0%": { transform: "scale(0.5)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
         }
       }
     },
